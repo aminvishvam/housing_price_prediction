@@ -270,7 +270,7 @@ const run = async () => {
     const trueValues = yTest.dataSync();
     const slmPreds = simpleLinearModel.predict(xTestSimple).dataSync();
     const lmPreds = linearModel.predict(xTest).dataSync();
-
+    
     renderPredictions(trueValues, slmPreds, lmPreds);
 };
 
